@@ -13,26 +13,26 @@
             </div>
             <div v-if="activeTab === 1" class="flex-col p-4">
               <div class="flex justify-around">
-                <div class="flex"><Icon name="material-symbols-directions-car" class="bg-gray-500 w-6 h-6"/>
+                <div class="flex"><Icon name="i-material-symbols-directions-car" class="bg-gray-500 w-6 h-6"/>
                   <p class="flex-1 text-gray-500 ml-2">出發地點</p>
                 </div>
-                <div class="flex"><Icon name="mdi-map-marker-radius-outline" class="bg-gray-500 w-6 h-6"/>
+                <div class="flex"><Icon name="i-mdi-map-marker-radius-outline" class="bg-gray-500 w-6 h-6"/>
                   <p class="flex-1 text-gray-500 ml-2">抵達地點</p>
                 </div>
               </div>
               <div class="flex justify-evenly">
                 <p class="ml-auto text-2xl ">金門水頭碼頭</p>
-                <Icon name="hugeicons-exchange-01" class=" mx-auto bg-green-600 w-7 h-7"/>
+                <Icon name="i-hugeicons-exchange-01" class=" mx-auto bg-green-600 w-7 h-7"/>
                 <p class="mr-auto text-2xl">金門商議機場</p>
               </div>
               <div class="border-b-2 py-3"></div>
               <div class="flex pt-3 pl-4">
-                <Icon name="majesticons-ship-line" class="bg-green-300 w-6 h-6"></Icon>
+                <Icon name="i-majesticons-ship-line" class="bg-green-300 w-6 h-6"></Icon>
                 <p class="text-green-300">抵達碼頭時間</p>
               </div>
 
               <div class="flex pt-3 pl-4">
-                <Icon name="material-symbols-directions-car" class="bg-green-300 w-6 h-6"></Icon>
+                <Icon name="i-material-symbols-directions-car" class="bg-green-300 w-6 h-6"></Icon>
                 <p class="text-green-300">接駁車發車時間</p>
               </div>
               <div class="flex pl-6">
@@ -46,10 +46,10 @@
                   <p class="flex-1">成人票</p>
                   <div class="flex-1 flex ">
                   <button @click="decrement('adult')">
-                  <Icon name="mdi-minus-circle-outline"/></button>
+                  <Icon name="i-mdi-minus-circle-outline"/></button>
                   <p class="px-2">{{ counts.adult }}</p>
                   <button @click="increment('adult')">
-                    <Icon name="material-symbols-add-circle-outline"/>
+                    <Icon name="i-material-symbols-add-circle-outline"/>
                   </button>
                   </div>
                 </div>
@@ -57,10 +57,10 @@
                   <p class="flex-1">嬰兒票(<= 2嵗)</p>
                   <div class="flex-1 flex">
                   <button @click="decrement('child')">
-                  <Icon name="mdi-minus-circle-outline"/></button>
+                  <Icon name="i-mdi-minus-circle-outline"/></button>
                   <p class="px-2 ">{{ counts.child }}</p>
                   <button @click="increment('child')">
-                    <Icon name="material-symbols-add-circle-outline"/>
+                    <Icon name="i-material-symbols-add-circle-outline"/>
                   </button>
                   </div>
                 </div>
